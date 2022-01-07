@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="Hangfire" Version="1.7.28" />
-    <PackageReference Include="Hangfire.Core" Version="1.7.28" />
     <PackageReference Include="Hangfire.InMemory" Version="0.3.4" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />

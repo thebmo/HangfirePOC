@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using Hangfire;
@@ -19,7 +18,6 @@ namespace HangfirePOC
         private const string KEY = "test_key";
 
         public static string[] QUEUES = { DEFAULT_Q };
-
 
         public CacheRefreshService(
             IBackgroundJobClient backgroundJobs,
@@ -43,7 +41,6 @@ namespace HangfirePOC
 
             return Task.CompletedTask;
         }
-
 
         [Queue(DEFAULT_Q)]
         public void initalSetCache()
